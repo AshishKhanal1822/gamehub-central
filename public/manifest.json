@@ -1,6 +1,7 @@
 {
     "name": "GameHub",
     "short_name": "GameHub",
+    "id": "/",
     "description": "Elevate your productivity with Focus Todo, deep writing, and immersive reading.",
     "theme_color": "#6366f1",
     "background_color": "#f8fafc",

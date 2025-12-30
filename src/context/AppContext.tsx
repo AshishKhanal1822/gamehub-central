@@ -18,31 +18,50 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
   const [user, setUser] = useState<User | null>(null);
 
   const login = async (email: string, password: string): Promise<boolean> => {
-    // Mock login - in production, this would call an API
-    if (email && password) {
-      setUser({
-        id: "1",
-        email,
-        username: email.split("@")[0],
-        recentlyPlayed: []
+    try {
+      const res = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password }),
       });
-      return true;
+      const data = await res.json();
+
+      if (data.success) {
+        setUser({
+          ...data.data,
+          // Ensure recentlyPlayed is initialized if missing
+          recentlyPlayed: data.data.recentlyPlayed || []
+        });
+        return true;
+      }
+      return false;
+    } catch (error) {
+      console.error("Login failed:", error);
+      return false;
     }
-    return false;
   };
 
   const signup = async (email: string, password: string, username: string): Promise<boolean> => {
-    // Mock signup - in production, this would call an API
-    if (email && password && username) {
-      setUser({
-        id: "1",
-        email,
-        username,
-        recentlyPlayed: []
+    try {
+      const res = await fetch('/api/auth/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password, username }),
       });
-      return true;
+      const data = await res.json();
+
+      if (data.success) {
+        setUser({
+          ...data.data,
+          recentlyPlayed: []
+        });
+        return true;
+      }
+      return false;
+    } catch (error) {
+      console.error("Signup failed:", error);
+      return false;
     }
-    return false;
   };
 
   const logout = () => {
