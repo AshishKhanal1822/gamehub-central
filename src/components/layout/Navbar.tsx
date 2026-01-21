@@ -20,11 +20,11 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useApp } from "@/context/AppContext";
-import { useAdmin } from "@/context/AdminContext";
+import { games as allGames } from "@/data/games";
 
 const navItems = [
   { path: "/", label: "Home", icon: Home },
-  { path: "/games", label: "Games", icon: Library },
+  { path: "/games", label: "Library", icon: Library },
   { path: "/play", label: "Play Online", icon: Play },
 ];
 
@@ -36,7 +36,6 @@ export const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const { favorites } = useApp();
-  const { allGames } = useAdmin();
 
   const searchResults = searchQuery
     ? allGames.filter(game =>
@@ -116,7 +115,7 @@ export const Navbar = () => {
                     {searchResults.map((game) => (
                       <Link
                         key={game.id}
-                        href={`/play/${game.id}`}
+                        href={`/games/${game.id}`}
                         onClick={() => {
                           setSearchQuery("");
                           setIsSearchOpen(false);

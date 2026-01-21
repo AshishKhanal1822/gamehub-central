@@ -19,15 +19,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { genres, platforms, regions } from "@/data/games";
-import { useAdmin } from "@/context/AdminContext";
+import { games as allGames, genres, platforms, regions } from "@/data/games";
 
 const GamesLibrary = () => {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
-
-  const { allGames } = useAdmin();
 
   const [searchQuery, setSearchQuery] = useState(searchParams.get("search") || "");
   const [genreFilter, setGenreFilter] = useState(searchParams.get("genre") || "all");
@@ -36,11 +33,19 @@ const GamesLibrary = () => {
   const [showFilters, setShowFilters] = useState(false);
 
   const filteredGames = useMemo(() => {
-    return allGames.filter(game => {
-      if (genreFilter !== "all" && game.genre !== genreFilter) return false;
-      if (platformFilter !== "all" && !game.platform.includes(platformFilter)) return false;
-      if (regionFilter !== "all" && game.region !== regionFilter) return false;
-      if (searchQuery && !game.title.toLowerCase().includes(searchQuery.toLowerCase())) return false;
+    return allGames.filter((game) => {
+      // Exclude playable games (browser games) from the main library interactively
+      if (game.isPlayable) return false;
+
+      const gFilter = genreFilter.toLowerCase();
+      const pFilter = platformFilter.toLowerCase();
+      const rFilter = regionFilter.toLowerCase();
+      const sQuery = searchQuery.toLowerCase();
+
+      if (genreFilter !== "all" && game.genre.toLowerCase() !== gFilter) return false;
+      if (platformFilter !== "all" && !game.platform.some(p => p.toLowerCase() === pFilter)) return false;
+      if (regionFilter !== "all" && game.region.toLowerCase() !== rFilter) return false;
+      if (searchQuery && !game.title.toLowerCase().includes(sQuery)) return false;
       return true;
     });
   }, [allGames, genreFilter, platformFilter, regionFilter, searchQuery]);

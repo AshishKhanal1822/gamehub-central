@@ -3,264 +3,356 @@ import { Game } from "@/types/game";
 export const games: Game[] = [
   {
     id: "1",
-    title: "Cyber Nexus 2088",
-    description: "Dive into a sprawling cyberpunk metropolis where corporations rule and hackers fight for freedom. Experience a gripping narrative-driven RPG with stunning visuals and deep character customization.",
+    title: "Cyberpunk 2077",
+    description: "Cyberpunk 2077 is an open-world, action-adventure RPG set in the megalopolis of Night City, where you play as a cyberpunk mercenary wrapped up in a do-or-die fight for survival.",
     genre: "RPG",
     platform: ["PC", "Console"],
     rating: 4.8,
-    releaseDate: "2024-03-15",
-    coverImage: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=450&fit=crop",
+    releaseDate: "2020-12-10",
+    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900.jpg",
+    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/library_hero.jpg",
+    trailer: "https://www.youtube.com/embed/P99qJGrPNLs",
     screenshots: [
-      "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800",
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/ss_2f649b68d579bf87011487d29bc4ccbfdd97d34f.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/ss_0e64170751e1ae20ff8fdb7001a8892fd48260e7.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/ss_af2804aa4bf35d4251043744412ce3b359a125ef.1920x1080.jpg"
     ],
-    developer: "NeoTech Studios",
-    publisher: "Digital Dreams",
-    isPlayable: true,
+    developer: "CD PROJEKT RED",
+    publisher: "CD PROJEKT RED",
+    isPlayable: false,
     isFeatured: true,
-    isNew: true,
-    region: "Global",
-    systemRequirements: {
-      minimum: "Intel i5-8400, GTX 1060, 16GB RAM",
-      recommended: "Intel i7-10700, RTX 3070, 32GB RAM"
-    }
+    isNew: false,
+    region: "Global"
   },
   {
     id: "2",
-    title: "Stellar Odyssey",
-    description: "Explore the vast universe in this epic space exploration game. Build your fleet, colonize planets, and forge alliances across the galaxy.",
-    genre: "Strategy",
-    platform: ["PC"],
-    rating: 4.6,
-    releaseDate: "2024-01-20",
-    coverImage: "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=800&h=450&fit=crop",
+    title: "Starfield",
+    description: "Starfield is the first new universe in over 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4.",
+    genre: "RPG",
+    platform: ["PC", "Console"],
+    rating: 4.4,
+    releaseDate: "2023-09-06",
+    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1716740/library_600x900.jpg",
+    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1716740/library_hero.jpg",
+    trailer: "https://www.youtube.com/embed/kfYEiTdsyas",
     screenshots: [
-      "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=800"
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1716740/ss_4887dc140a637684ddcfca518458668409f946dc.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1716740/ss_b2821283cb140cd5a6289a8160016b6a60d8f96e.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1716740/ss_68f15d580bf91971f637be5e464bc803482d78f7.1920x1080.jpg"
     ],
-    developer: "Cosmos Interactive",
-    publisher: "Stellar Games",
-    isPlayable: true,
+    developer: "Bethesda Game Studios",
+    publisher: "Bethesda Softworks",
+    isPlayable: false,
     isFeatured: true,
     isNew: false,
-    region: "Global",
-    systemRequirements: {
-      minimum: "Intel i5-6500, GTX 1050, 8GB RAM",
-      recommended: "Intel i7-9700, RTX 2060, 16GB RAM"
-    }
+    region: "Global"
   },
   {
     id: "3",
-    title: "Shadow Legends: Arena",
-    description: "Fast-paced multiplayer combat in a dark fantasy setting. Choose your champion and battle in intense 5v5 matches.",
+    title: "Elden Ring",
+    description: "Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
     genre: "Action",
-    platform: ["PC", "Console", "Mobile"],
-    rating: 4.4,
-    releaseDate: "2023-11-10",
-    coverImage: "https://images.unsplash.com/photo-1552820728-8b83bb6b2b0b?w=800&h=450&fit=crop",
+    platform: ["PC", "Console"],
+    rating: 4.9,
+    releaseDate: "2022-02-25",
+    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/library_600x900.jpg",
+    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/library_hero.jpg",
+    trailer: "https://www.youtube.com/embed/E3Huy2cdih0",
     screenshots: [
-      "https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?w=800"
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/ss_943bf6fe62352757d9070c1d33e50b92fe8539f1.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/ss_dcdac9e4b26ac0ee5248bfd2967d764fd00cdb42.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/ss_3c41384a24d86dddd58a8f61db77f9dc0bfda8b5.1920x1080.jpg"
     ],
-    developer: "Mythic Games",
-    publisher: "Mythic Games",
-    isPlayable: true,
+    developer: "FromSoftware Inc.",
+    publisher: "Bandai Namco",
+    isPlayable: false,
     isFeatured: true,
     isNew: false,
     region: "Global"
   },
   {
     id: "4",
-    title: "Velocity Rush",
-    description: "Experience the ultimate racing thrill with cutting-edge graphics and realistic physics. Race through stunning locations worldwide.",
-    genre: "Racing",
+    title: "Black Myth: Wukong",
+    description: "Black Myth: Wukong is an action RPG rooted in Chinese mythology. Set out as the Destined One to venture into the challenges and marvels ahead.",
+    genre: "Action",
     platform: ["PC", "Console"],
-    rating: 4.5,
-    releaseDate: "2024-02-28",
-    coverImage: "https://images.unsplash.com/photo-1511882150382-421056c89033?w=800&h=450&fit=crop",
+    rating: 4.9,
+    releaseDate: "2024-08-20",
+    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/library_600x900.jpg",
+    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/library_hero.jpg",
+    trailer: "https://www.youtube.com/embed/_mAnlVXtDD8",
     screenshots: [
-      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800"
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/ss_86c4b7462bba219a0d0b89931a35812b9f188976.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/ss_d9391ab31a4d15dddf7ba4949bfa44f5d9170580.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/ss_524a39da392ee83dde091033562bc719d46b5838.1920x1080.jpg"
     ],
-    developer: "Speed Studios",
-    publisher: "Racing Interactive",
-    isPlayable: true,
-    isFeatured: false,
+    developer: "Game Science",
+    publisher: "Game Science",
+    isPlayable: false,
+    isFeatured: true,
     isNew: true,
-    region: "Global",
-    systemRequirements: {
-      minimum: "Intel i5-7400, GTX 1050 Ti, 8GB RAM",
-      recommended: "Intel i7-10700K, RTX 3060, 16GB RAM"
-    }
+    region: "Global"
   },
   {
     id: "5",
-    title: "Puzzle Dimensions",
-    description: "Mind-bending puzzles across multiple dimensions. Test your logic and spatial reasoning in this award-winning puzzle game.",
-    genre: "Puzzle",
-    platform: ["PC", "Mobile"],
-    rating: 4.7,
-    releaseDate: "2023-09-05",
-    coverImage: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=800&h=450&fit=crop",
-    screenshots: [
-      "https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=800"
-    ],
-    developer: "Mind Games Inc",
-    publisher: "Indie Collective",
-    isPlayable: true,
-    isFeatured: false,
-    isNew: false,
-    region: "Global"
-  },
-  {
-    id: "6",
-    title: "Kingdom Conquest",
-    description: "Build your medieval empire from the ground up. Wage war, forge alliances, and write your legacy in this grand strategy epic.",
-    genre: "Strategy",
-    platform: ["PC"],
-    rating: 4.3,
-    releaseDate: "2023-12-01",
-    coverImage: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=450&fit=crop",
-    screenshots: [
-      "https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=800"
-    ],
-    developer: "Crown Studios",
-    publisher: "Epic Games Publishing",
-    isPlayable: true,
-    isFeatured: false,
-    isNew: false,
-    region: "Europe",
-    systemRequirements: {
-      minimum: "Intel i5-4460, GTX 960, 8GB RAM",
-      recommended: "Intel i7-8700, GTX 1070, 16GB RAM"
-    }
-  },
-  {
-    id: "7",
-    title: "Neon Striker",
-    description: "Retro-styled arcade shooter with modern mechanics. Battle through waves of enemies in this addictive action game.",
+    title: "Ghost of Tsushima",
+    description: "In the late 13th century, the Mongol empire has laid waste to entire nations. Tsushima Island is all that stands between mainland Japan and a massive Mongol invasion fleet.",
     genre: "Action",
-    platform: ["PC", "Mobile"],
-    rating: 4.2,
-    releaseDate: "2024-01-05",
-    coverImage: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=450&fit=crop",
+    platform: ["PC", "Console"],
+    rating: 4.8,
+    releaseDate: "2024-05-16",
+    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215430/library_600x900.jpg",
+    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215430/library_hero.jpg",
+    trailer: "https://www.youtube.com/embed/A5gVt028Hww",
     screenshots: [
-      "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?w=800"
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215430/ss_d60e16422fc1605181e0fedee3e2cfc1e02c750e.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215430/ss_11409331d57966ef193d66ffcded569d02a4e034.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215430/ss_bd593bab36968778b95ed4a1a12ec82d2350d351.1920x1080.jpg"
     ],
-    developer: "Pixel Perfect",
-    publisher: "Retro Games",
-    isPlayable: true,
+    developer: "Sucker Punch",
+    publisher: "PlayStation",
+    isPlayable: false,
     isFeatured: false,
     isNew: true,
-    region: "Global"
+    region: "Japan"
   },
   {
-    id: "8",
-    title: "Mystic Quest Online",
-    description: "Join millions of players in this massive multiplayer fantasy adventure. Explore dungeons, craft items, and become a legend.",
-    genre: "MMO",
-    platform: ["PC"],
-    rating: 4.1,
-    releaseDate: "2022-06-15",
-    coverImage: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&h=450&fit=crop",
+    id: "rdr2",
+    title: "Red Dead Redemption 2",
+    description: "Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, RDR2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age.",
+    genre: "Action",
+    platform: ["PC", "Console"],
+    rating: 4.9,
+    releaseDate: "2019-12-05",
+    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/library_600x900.jpg",
+    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/library_hero.jpg",
+    trailer: "https://www.youtube.com/embed/gmA6MrX81z4?si=rrvLOR7EfvVrNCgB",
     screenshots: [
-      "https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=800"
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/ss_9c878f8c42b82736e053f19175be923838332152.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/ss_f866164299b908756ce16c27650f97022e70e303.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/ss_891e46950346c43425cb0667417578332128ce0a.1920x1080.jpg"
     ],
-    developer: "Fantasy World Studios",
-    publisher: "Global Gaming",
-    isPlayable: true,
-    isFeatured: false,
-    isNew: false,
-    region: "Asia",
-    systemRequirements: {
-      minimum: "Intel i3-6100, GTX 750 Ti, 8GB RAM",
-      recommended: "Intel i5-8400, GTX 1060, 16GB RAM"
-    }
-  },
-  {
-    id: "9",
-    title: "Block Builder Pro",
-    description: "Unleash your creativity in this sandbox building game. Create anything you can imagine with unlimited resources.",
-    genre: "Sandbox",
-    platform: ["PC", "Console", "Mobile"],
-    rating: 4.6,
-    releaseDate: "2023-03-20",
-    coverImage: "https://images.unsplash.com/photo-1493711662062-fa541f7f3d24?w=800&h=450&fit=crop",
-    screenshots: [
-      "https://images.unsplash.com/photo-1472457897821-70d3819a0e24?w=800"
-    ],
-    developer: "Creative Labs",
-    publisher: "Family Games",
-    isPlayable: true,
-    isFeatured: false,
+    developer: "Rockstar Games",
+    publisher: "Rockstar Games",
+    isPlayable: false,
+    isFeatured: true,
     isNew: false,
     region: "Global"
   },
   {
-    id: "10",
-    title: "Dragon's Legacy",
-    description: "Embark on an epic journey to save the realm from ancient dragons. A classic JRPG with modern twists.",
+    id: "witcher3",
+    title: "The Witcher 3: Wild Hunt",
+    description: "You are Geralt of Rivia, mercenary monster slayer. Before you stands a war-torn, monster-infested continent you can explore at will. Your current contract? Tracking down the Child of Prophecy, a living weapon that can alter the shape of the world.",
     genre: "RPG",
     platform: ["PC", "Console"],
     rating: 4.9,
-    releaseDate: "2024-04-01",
-    coverImage: "https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?w=800&h=450&fit=crop",
+    releaseDate: "2015-05-19",
+    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/library_600x900.jpg",
+    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/library_hero.jpg",
+    trailer: "https://www.youtube.com/embed/c0i88t0Kacs",
     screenshots: [
-      "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=800"
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/ss_16239169608cd734898fc8ba911c75908ce9103c.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/ss_1ba7a840c83a936a9926d246c075f14b3017ca47.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/ss_a188be96d744837dd49e1e075c3db77e9282362b.1920x1080.jpg"
     ],
-    developer: "Eastern Dreams",
-    publisher: "JRPG Masters",
-    isPlayable: true,
+    developer: "CD PROJEKT RED",
+    publisher: "CD PROJEKT RED",
+    isPlayable: false,
     isFeatured: true,
-    isNew: true,
-    region: "Japan",
-    systemRequirements: {
-      minimum: "Intel i5-6600, GTX 1050 Ti, 12GB RAM",
-      recommended: "Intel i7-10700, RTX 3060, 16GB RAM"
-    }
+    isNew: false,
+    region: "Global"
   },
   {
-    id: "11",
-    title: "Soccer Champions 2024",
-    description: "The most realistic soccer simulation ever created. Lead your team to glory in leagues worldwide.",
-    genre: "Sports",
+    id: "god-of-war",
+    title: "God of War",
+    description: "His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same.",
+    genre: "Action",
     platform: ["PC", "Console"],
-    rating: 4.4,
-    releaseDate: "2024-02-10",
-    coverImage: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&h=450&fit=crop",
+    rating: 4.9,
+    releaseDate: "2022-01-14",
+    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1593500/library_600x900.jpg",
+    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1593500/library_hero.jpg",
+    trailer: "https://www.youtube.com/embed/Z4uoSqqhdgY",
     screenshots: [
-      "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800"
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1593500/ss_37435f79574af52f6d63428d095562723652613d.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1593500/ss_82136e0539f375f46327072ccbe368a6234ba44b.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1593500/ss_1113543d425b041a7d25687799307d1747754bde.1920x1080.jpg"
     ],
-    developer: "Sport Kings",
-    publisher: "Athletic Games",
-    isPlayable: true,
-    isFeatured: false,
-    isNew: true,
-    region: "Europe",
-    systemRequirements: {
-      minimum: "Intel i5-7500, GTX 1050, 8GB RAM",
-      recommended: "Intel i7-9700, RTX 2070, 16GB RAM"
-    }
+    developer: "Santa Monica Studio",
+    publisher: "PlayStation",
+    isPlayable: false,
+    isFeatured: true,
+    isNew: false,
+    region: "Global"
   },
   {
-    id: "12",
-    title: "Zombie Survival",
-    description: "Survive the apocalypse in this intense survival horror game. Scavenge, build, and fight to stay alive.",
-    genre: "Horror",
-    platform: ["PC"],
-    rating: 4.0,
-    releaseDate: "2023-10-31",
-    coverImage: "https://images.unsplash.com/photo-1509248961725-9d3c0c4e4c18?w=800&h=450&fit=crop",
+    id: "hogwarts-legacy",
+    title: "Hogwarts Legacy",
+    description: "Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. For the first time, experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart.",
+    genre: "RPG",
+    platform: ["PC", "Console"],
+    rating: 4.7,
+    releaseDate: "2023-02-10",
+    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/library_600x900.jpg",
+    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/library_hero.jpg",
+    trailer: "https://www.youtube.com/embed/1O6Qstncpnc",
     screenshots: [
-      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/ss_e1e574d754700d11a91632768565259c1c4f5195.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/ss_df4512401f010360de8984922119c63673ab1be9.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/ss_ba690740a87754869c3a37b37016333cda4b2a8d.1920x1080.jpg"
     ],
-    developer: "Horror Studios",
-    publisher: "Nightmare Games",
+    developer: "Avalanche Software",
+    publisher: "Warner Bros. Games",
+    isPlayable: false,
+    isFeatured: true,
+    isNew: false,
+    region: "Global"
+  },
+  {
+    id: "bg3",
+    title: "Baldur's Gate 3",
+    description: "Baldur's Gate 3 is a story-rich, party-based RPG set in the universe of Dungeons & Dragons, where your choices shape a tale of fellowship and betrayal, survival and sacrifice, and the lure of absolute power.",
+    genre: "RPG",
+    platform: ["PC", "Console"],
+    rating: 4.9,
+    releaseDate: "2023-08-03",
+    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/library_600x900.jpg",
+    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/library_hero.jpg",
+    trailer: "https://www.youtube.com/embed/1T22wNvoNiU",
+    screenshots: [
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/ss_f866164299b908756ce16c27650f97022e70e303.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/ss_16239169608cd734898fc8ba911c75908ce9103c.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/ss_37435f79574af52f6d63428d095562723652613d.1920x1080.jpg"
+    ],
+    developer: "Larian Studios",
+    publisher: "Larian Studios",
+    isPlayable: false,
+    isFeatured: true,
+    isNew: false,
+    region: "Global"
+  },
+  {
+    id: "gta-v",
+    title: "Grand Theft Auto V",
+    description: "Experience Rockstar Games' critically acclaimed open world action game. When a young street hustler, a retired bank robber and a terrifying psychopath find themselves entangled with some of the most frightening and deranged elements of the criminal underworld, the U.S. government and the entertainment industry, they must pull off a series of dangerous heists to survive in a ruthless city in which they can trust nobody, least of all each other.",
+    genre: "Action",
+    platform: ["PC", "Console"],
+    rating: 4.9,
+    releaseDate: "2015-04-14",
+    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/271590/library_600x900.jpg",
+    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/271590/library_hero.jpg",
+    trailer: "https://www.youtube.com/embed/QkkoHAzjnUs",
+    screenshots: [
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/271590/ss_e1f5747683419011743a6d713c8f38d4be30e791.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/271590/ss_82570081c784860b7e283f3f2fa9ebbc6ee7e829.1920x1080.jpg"
+    ],
+    developer: "Rockstar North",
+    publisher: "Rockstar Games",
+    isPlayable: false,
+    isFeatured: true,
+    isNew: false,
+    region: "Global"
+  },
+  {
+    id: "p3",
+    title: "Monkey GO Happy",
+    description: "The original Monkey GO Happy game. Solve puzzles and make the sad monkey happy again in this family-friendly adventure.",
+    genre: "Puzzle",
+    platform: ["PC", "Mobile"],
+    rating: 4.8,
+    releaseDate: "2023-05-10",
+    coverImage: "https://www.addictinggames.com/images/monkey_go_happy_box.jpg",
+    heroImage: "https://www.addictinggames.com/images/monkey_go_happy_1.jpg",
+    trailer: "https://www.youtube.com/embed/Xq_7Q4n-b68",
+    screenshots: [],
+    developer: "Addicting Games",
+    publisher: "Addicting Games",
     isPlayable: true,
     isFeatured: false,
     isNew: false,
-    region: "Americas",
-    systemRequirements: {
-      minimum: "Intel i5-4590, GTX 960, 8GB RAM",
-      recommended: "Intel i7-8700, GTX 1070, 16GB RAM"
-    }
+    region: "Global"
+  },
+  {
+    id: "gta-iv",
+    title: "Grand Theft Auto IV",
+    description: "Niko Bellic, Johnny Klebitz and Luis Lopez all have one thing in common – they live in the worst city in America. Liberty City worships money and status, and is heaven for those who have them and a living nightmare for those who don't.",
+    genre: "Action",
+    platform: ["PC", "Console"],
+    rating: 4.8,
+    releaseDate: "2008-12-02",
+    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/12210/library_600x900.jpg",
+    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/12210/library_hero.jpg",
+    trailer: "https://www.youtube.com/embed/M80K51DosFo",
+    screenshots: [
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/12210/ss_49dfbc513cabc308e7a00d9e29543e577ea14da9.1920x1080.jpg"
+    ],
+    developer: "Rockstar North",
+    publisher: "Rockstar Games",
+    isPlayable: false,
+    isFeatured: true,
+    isNew: false,
+    region: "Global"
+  },
+  {
+    id: "gta-sa",
+    title: "Grand Theft Auto: San Andreas",
+    description: "Five years ago, Carl 'CJ' Johnson escaped the haze of Los Santos, San Andreas... a city tearing itself apart with gang trouble, drugs and corruption.",
+    genre: "Action",
+    platform: ["PC", "Console"],
+    rating: 4.7,
+    releaseDate: "2005-06-07",
+    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1711200/library_600x900.jpg",
+    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1711200/library_hero.jpg",
+    trailer: "https://www.youtube.com/embed/2NNSNTYR12M?si=_fxqJQmRBTm2Zgc8",
+    screenshots: [
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1711200/ss_752a781b0a88730b2e3cc17f51950e3034f7f2b9.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1711200/ss_cedf9d270384752697b0933580554cbe50eff9b0.1920x1080.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1711200/ss_8e64170751e1ae20ff8fdb7001a8892fd48260e7.1920x1080.jpg"
+    ],
+    developer: "Rockstar North",
+    publisher: "Rockstar Games",
+    isPlayable: false,
+    isFeatured: false,
+    isNew: false,
+    region: "Global"
+  },
+  {
+    id: "p5",
+    title: "2048",
+    description: "The viral math puzzle game. Join the numbers and get to the 2048 tile!",
+    genre: "Puzzle",
+    platform: ["PC", "Mobile"],
+    rating: 4.8,
+    releaseDate: "2023-07-01",
+    coverImage: "https://www.addictinggames.com/images/2048_box.jpg",
+    heroImage: "https://www.addictinggames.com/images/2048_1.jpg",
+    trailer: "https://www.youtube.com/embed/E6jQ6xqAKOI",
+    screenshots: [],
+    developer: "Addicting Games",
+    publisher: "Addicting Games",
+    isPlayable: true,
+    isFeatured: false,
+    isNew: false,
+    region: "Global"
+  },
+  {
+    id: "p6",
+    title: "Daily Solitaire",
+    description: "The classic card game with daily challenges. Relax and enjoy a game of Klondike Solitaire.",
+    genre: "Puzzle",
+    platform: ["PC", "Mobile"],
+    rating: 4.5,
+    releaseDate: "2023-08-10",
+    coverImage: "https://www.addictinggames.com/images/daily_solitaire_box.jpg",
+    heroImage: "https://www.addictinggames.com/images/daily_solitaire_1.jpg",
+    trailer: "https://www.youtube.com/embed/Xq_7Q4n-b68",
+    screenshots: [],
+    developer: "Addicting Games",
+    publisher: "Addicting Games",
+    isPlayable: true,
+    isFeatured: false,
+    isNew: false,
+    region: "Global"
   }
 ];
 
@@ -270,31 +362,4 @@ export const regions = ["Global", "Americas", "Europe", "Asia", "Japan"];
 
 export const getGameById = (id: string): Game | undefined => {
   return games.find(game => game.id === id);
-};
-
-export const getFeaturedGames = (): Game[] => {
-  return games.filter(game => game.isFeatured);
-};
-
-export const getNewReleases = (): Game[] => {
-  return games.filter(game => game.isNew);
-};
-
-export const getPlayableGames = (): Game[] => {
-  return games.filter(game => game.isPlayable);
-};
-
-export const filterGames = (
-  genreFilter?: string,
-  platformFilter?: string,
-  regionFilter?: string,
-  searchQuery?: string
-): Game[] => {
-  return games.filter(game => {
-    if (genreFilter && game.genre !== genreFilter) return false;
-    if (platformFilter && !game.platform.includes(platformFilter)) return false;
-    if (regionFilter && game.region !== regionFilter) return false;
-    if (searchQuery && !game.title.toLowerCase().includes(searchQuery.toLowerCase())) return false;
-    return true;
-  });
 };

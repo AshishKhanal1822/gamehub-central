@@ -7,6 +7,7 @@ export interface Game {
   rating: number;
   releaseDate: string;
   coverImage: string;
+  heroImage?: string;
   screenshots: string[];
   trailer?: string;
   developer: string;

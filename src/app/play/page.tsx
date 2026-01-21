@@ -1,8 +1,12 @@
 "use client";
 
-import PlayOnline from "@/views/PlayOnline";
-
+import { Suspense } from "react";
+import PlayOnline from "../../views/PlayOnline";
 
 export default function Page() {
-    return <PlayOnline />;
+    return (
+        <Suspense fallback={<div className="min-h-screen bg-black" />}>
+            <PlayOnline />
+        </Suspense>
+    );
 }

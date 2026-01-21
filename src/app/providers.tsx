@@ -6,8 +6,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import { AppProvider } from "@/context/AppContext";
-import { AdminProvider } from "@/context/AdminContext";
-import { ControllerProvider } from "@/context/ControllerContext";
 import { useState } from "react";
 
 export function Providers({ children }: { children: React.ReactNode }) {
@@ -16,15 +14,11 @@ export function Providers({ children }: { children: React.ReactNode }) {
     return (
         <QueryClientProvider client={queryClient}>
             <AppProvider>
-                <AdminProvider>
-                    <ControllerProvider>
-                        <TooltipProvider>
-                            {children}
-                        </TooltipProvider>
-                        <Toaster />
-                        <Sonner />
-                    </ControllerProvider>
-                </AdminProvider>
+                <TooltipProvider>
+                    {children}
+                </TooltipProvider>
+                <Toaster />
+                <Sonner />
             </AppProvider>
         </QueryClientProvider>
     );
