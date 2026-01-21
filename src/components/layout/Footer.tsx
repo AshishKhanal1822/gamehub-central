@@ -47,12 +47,8 @@ export const Footer = () => {
                   Play Online
                 </Link>
               </li>
-              <li>
-                <Link href="/leaderboard" className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-2">
-                  <Trophy className="w-4 h-4" />
-                  Leaderboards
-                </Link>
-              </li>
+
+
               <li>
                 <Link href="/news" className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-2">
                   <Newspaper className="w-4 h-4" />
@@ -93,16 +89,11 @@ export const Footer = () => {
           <div>
             <h4 className="font-gaming font-semibold mb-4">Community</h4>
             <ul className="space-y-2">
-              <li>
-                <Link href="/games?filter=favorites" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  My Favorites
-                </Link>
-              </li>
-              <li>
+              {/* <li>
                 <Link href="/admin" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                   Admin Panel
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <a href="mailto:support@gamehub.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
                   <Mail className="w-4 h-4" />
@@ -114,7 +105,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground text-sm">
-          <p>© 2024 GameHub. All rights reserved. Made with ❤️ for gamers worldwide.</p>
+          <p>© 2026 GameHub. All rights reserved. Made with ❤️ for gamers worldwide.</p>
         </div>
       </div>
     </footer>
