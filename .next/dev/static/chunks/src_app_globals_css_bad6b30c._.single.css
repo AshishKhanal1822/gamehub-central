@@ -261,47 +261,47 @@ img, video {
 }
 
 :root {
-  --background: 220 20% 6%;
-  --foreground: 210 40% 98%;
-  --card: 220 20% 10%;
-  --card-foreground: 210 40% 98%;
-  --popover: 220 20% 8%;
-  --popover-foreground: 210 40% 98%;
-  --primary: 185 100% 50%;
-  --primary-foreground: 220 20% 6%;
-  --secondary: 220 20% 15%;
-  --secondary-foreground: 210 40% 98%;
-  --muted: 220 20% 18%;
-  --muted-foreground: 215 20% 55%;
-  --accent: 280 100% 60%;
-  --accent-foreground: 210 40% 98%;
+  --background: 220 14% 95%;
+  --foreground: 224 71% 4%;
+  --card: 0 0% 100%;
+  --card-foreground: 224 71% 4%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 224 71% 4%;
+  --primary: 185 100% 35%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 220 14% 90%;
+  --secondary-foreground: 224 71% 4%;
+  --muted: 220 14% 90%;
+  --muted-foreground: 215 16% 47%;
+  --accent: 220 14% 90%;
+  --accent-foreground: 224 71% 4%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 210 40% 98%;
-  --border: 220 20% 18%;
-  --input: 220 20% 15%;
-  --ring: 185 100% 50%;
+  --border: 220 13% 85%;
+  --input: 220 13% 85%;
+  --ring: 185 100% 40%;
   --radius: .75rem;
   --gaming-glow: 185 100% 50%;
   --gaming-purple: 280 100% 60%;
   --gaming-green: 145 80% 50%;
   --gaming-orange: 25 100% 55%;
   --gaming-red: 0 84% 60%;
-  --gradient-primary: linear-gradient(135deg, #00eaff 0%, #b3f 100%);
-  --gradient-dark: linear-gradient(180deg, #14181f 0%, #0c0e12 100%);
-  --gradient-card: linear-gradient(145deg, #181d25 0%, #101318 100%);
-  --shadow-glow: 0 0 30px #00eaff4d;
-  --shadow-card: 0 8px 32px #0006;
-  --shadow-hover: 0 12px 40px #00eaff33;
+  --gradient-primary: linear-gradient(135deg, #00d2e6 0%, #b3f 100%);
+  --gradient-dark: linear-gradient(180deg, #f9fafb 0%, #fff 100%);
+  --gradient-card: linear-gradient(145deg, #fff 0%, #fafafa 100%);
+  --shadow-glow: 0 0 30px #00eaff33;
+  --shadow-card: 0 8px 32px #0000000d;
+  --shadow-hover: 0 12px 40px #00eaff26;
   --font-gaming: "Orbitron", sans-serif;
   --font-body: "Inter", sans-serif;
-  --sidebar-background: 220 20% 8%;
-  --sidebar-foreground: 210 40% 98%;
-  --sidebar-primary: 185 100% 50%;
-  --sidebar-primary-foreground: 220 20% 6%;
-  --sidebar-accent: 220 20% 15%;
-  --sidebar-accent-foreground: 210 40% 98%;
-  --sidebar-border: 220 20% 18%;
-  --sidebar-ring: 185 100% 50%;
+  --sidebar-background: 220 14% 95%;
+  --sidebar-foreground: 224 71% 4%;
+  --sidebar-primary: 240 5.9% 10%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 240 4.8% 95.9%;
+  --sidebar-accent-foreground: 240 5.9% 10%;
+  --sidebar-border: 220 13% 91%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
 }
 
 .dark {
@@ -443,16 +443,8 @@ h1, h2, h3, h4, h5, h6 {
   left: -3rem;
 }
 
-.-right-1 {
-  right: -.25rem;
-}
-
 .-right-12 {
   right: -3rem;
-}
-
-.-top-1 {
-  top: -.25rem;
 }
 
 .-top-12 {
@@ -1089,10 +1081,6 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 12rem;
 }
 
-.min-w-\[80px\] {
-  min-width: 80px;
-}
-
 .min-w-\[8rem\] {
   min-width: 8rem;
 }
@@ -1406,16 +1394,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.divide-y > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
-}
-
-.divide-border > :not([hidden]) ~ :not([hidden]) {
-  border-color: hsl(var(--border));
-}
-
 .overflow-auto {
   overflow: auto;
 }
@@ -1712,11 +1690,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: hsl(var(--gaming-orange) / .2);
 }
 
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
-}
-
 .bg-green-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
@@ -1732,11 +1705,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-muted\/50 {
   background-color: hsl(var(--muted) / .5);
-}
-
-.bg-orange-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 88 12 / var(--tw-bg-opacity, 1));
 }
 
 .bg-popover {
@@ -1793,11 +1761,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-white\/5 {
   background-color: #ffffff0d;
-}
-
-.bg-yellow-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
 }
 
 .bg-yellow-500\/30 {
@@ -2210,10 +2173,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.text-right {
-  text-align: right;
-}
-
 .align-middle {
   vertical-align: middle;
 }
@@ -2413,11 +2372,6 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(var(--gaming-orange));
 }
 
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
-}
-
 .text-green-500 {
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity, 1));
@@ -2425,11 +2379,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-muted-foreground {
   color: hsl(var(--muted-foreground));
-}
-
-.text-orange-600 {
-  --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity, 1));
 }
 
 .text-popover-foreground {
@@ -2479,11 +2428,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-white\/70 {
   color: #ffffffb3;
-}
-
-.text-yellow-500 {
-  --tw-text-opacity: 1;
-  color: rgb(234 179 8 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -3028,10 +2972,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .hover\:bg-primary\/10:hover {
   background-color: hsl(var(--primary) / .1);
-}
-
-.hover\:bg-primary\/5:hover {
-  background-color: hsl(var(--primary) / .05);
 }
 
 .hover\:bg-primary\/80:hover {

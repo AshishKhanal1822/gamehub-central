@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import { Game } from "@/types/game";
-import { UserProfile, Achievement, GameReview } from "@/types/user";
+import { UserProfile, Achievement, GameReview } from "@/types/user.ts";
 
 interface AppContextType {
   // Existing

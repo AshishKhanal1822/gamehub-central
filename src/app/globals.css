@@ -13,33 +13,36 @@
 
 @layer base {
   :root {
-    --background: 220 20% 6%;
-    --foreground: 210 40% 98%;
+    --background: 220 14% 95%;
+    /* Slightly darker background (approx #f1f3f5) */
+    --foreground: 224 71% 4%;
 
-    --card: 220 20% 10%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
 
-    --popover: 220 20% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 4%;
 
-    --primary: 185 100% 50%;
-    --primary-foreground: 220 20% 6%;
+    --primary: 185 100% 35%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 220 20% 15%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 14% 90%;
+    /* Darker secondary for better contrast against bg */
+    --secondary-foreground: 224 71% 4%;
 
-    --muted: 220 20% 18%;
-    --muted-foreground: 215 20% 55%;
+    --muted: 220 14% 90%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 280 100% 60%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 220 14% 90%;
+    --accent-foreground: 224 71% 4%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 15%;
-    --ring: 185 100% 50%;
+    --border: 220 13% 85%;
+    /* Slightly darker border */
+    --input: 220 13% 85%;
+    --ring: 185 100% 40%;
 
     --radius: 0.75rem;
 
@@ -50,25 +53,26 @@
     --gaming-orange: 25 100% 55%;
     --gaming-red: 0 84% 60%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(185 100% 50%) 0%, hsl(280 100% 60%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(220 20% 10%) 0%, hsl(220 20% 6%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(220 20% 12%) 0%, hsl(220 20% 8%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(185 100% 45%) 0%, hsl(280 100% 60%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(220 20% 98%) 0%, hsl(220 20% 100%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
 
-    --shadow-glow: 0 0 30px hsl(185 100% 50% / 0.3);
-    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.4);
-    --shadow-hover: 0 12px 40px hsl(185 100% 50% / 0.2);
+    --shadow-glow: 0 0 30px hsl(185 100% 50% / 0.2);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.05);
+    /* Softer shadow */
+    --shadow-hover: 0 12px 40px hsl(185 100% 50% / 0.15);
 
     --font-gaming: 'Orbitron', sans-serif;
     --font-body: 'Inter', sans-serif;
 
-    --sidebar-background: 220 20% 8%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 185 100% 50%;
-    --sidebar-primary-foreground: 220 20% 6%;
-    --sidebar-accent: 220 20% 15%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 220 20% 18%;
-    --sidebar-ring: 185 100% 50%;
+    --sidebar-background: 220 14% 95%;
+    --sidebar-foreground: 224 71% 4%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
@@ -108,7 +112,12 @@
     font-family: var(--font-body);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-gaming);
     letter-spacing: 0.02em;
   }
@@ -160,7 +169,7 @@
   .neon-border {
     border: 1px solid hsl(var(--primary) / 0.5);
     box-shadow: inset 0 0 20px hsl(var(--primary) / 0.1),
-                0 0 20px hsl(var(--primary) / 0.2);
+      0 0 20px hsl(var(--primary) / 0.2);
   }
 }
 
@@ -174,9 +183,12 @@
   }
 
   @keyframes pulse-glow {
-    0%, 100% {
+
+    0%,
+    100% {
       box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
     }
+
     50% {
       box-shadow: 0 0 40px hsl(var(--primary) / 0.5);
     }
@@ -187,9 +199,12 @@
   }
 
   @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(-10px);
     }

@@ -147,13 +147,13 @@ export const games: Game[] = [
     platform: ["PC", "Console"],
     rating: 4.9,
     releaseDate: "2015-05-19",
-    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/library_600x900.jpg",
-    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/library_hero.jpg",
+    coverImage: "https://cdn.akamai.steamstatic.com/steam/apps/292030/library_600x900.jpg",
+    heroImage: "https://cdn.akamai.steamstatic.com/steam/apps/292030/library_hero.jpg",
     trailer: "https://www.youtube.com/embed/c0i88t0Kacs",
     screenshots: [
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/ss_16239169608cd734898fc8ba911c75908ce9103c.1920x1080.jpg",
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/ss_1ba7a840c83a936a9926d246c075f14b3017ca47.1920x1080.jpg",
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/ss_a188be96d744837dd49e1e075c3db77e9282362b.1920x1080.jpg"
+      "https://cdn.akamai.steamstatic.com/steam/apps/292030/ss_16239169608cd734898fc8ba911c75908ce9103c.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/292030/ss_1ba7a840c83a936a9926d246c075f14b3017ca47.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/292030/ss_a188be96d744837dd49e1e075c3db77e9282362b.1920x1080.jpg"
     ],
     developer: "CD PROJEKT RED",
     publisher: "CD PROJEKT RED",
@@ -301,13 +301,13 @@ export const games: Game[] = [
     platform: ["PC", "Console"],
     rating: 4.7,
     releaseDate: "2005-06-07",
-    coverImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1711200/library_600x900.jpg",
-    heroImage: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1711200/library_hero.jpg",
+    coverImage: "https://cdn.akamai.steamstatic.com/steam/apps/1547000/library_600x900.jpg",
+    heroImage: "https://cdn.akamai.steamstatic.com/steam/apps/1547000/library_hero.jpg",
     trailer: "https://www.youtube.com/embed/2NNSNTYR12M?si=_fxqJQmRBTm2Zgc8",
     screenshots: [
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1711200/ss_752a781b0a88730b2e3cc17f51950e3034f7f2b9.1920x1080.jpg",
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1711200/ss_cedf9d270384752697b0933580554cbe50eff9b0.1920x1080.jpg",
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1711200/ss_8e64170751e1ae20ff8fdb7001a8892fd48260e7.1920x1080.jpg"
+      "https://cdn.akamai.steamstatic.com/steam/apps/1547000/ss_752a781b0a88730b2e3cc17f51950e3034f7f2b9.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/1547000/ss_cedf9d270384752697b0933580554cbe50eff9b0.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/1547000/ss_8e64170751e1ae20ff8fdb7001a8892fd48260e7.1920x1080.jpg"
     ],
     developer: "Rockstar North",
     publisher: "Rockstar Games",

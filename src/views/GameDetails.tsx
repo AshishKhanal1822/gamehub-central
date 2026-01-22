@@ -53,7 +53,7 @@ const GameDetails = () => {
         {/* Hero Banner */}
         <div className="relative h-[60vh] min-h-[500px]">
           <img
-            src={game.coverImage}
+            src={game.heroImage}
             alt={game.title}
             className="w-full h-full object-cover"
           />
@@ -159,8 +159,8 @@ const GameDetails = () => {
                   Visual Showcase
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Digital Assets Gallery - includes cover and screenshots */}
-                  {[game.coverImage, ...(game.screenshots || [])].map((screenshot, index) => (
+                  {/* Digital Assets Gallery - includes hero and screenshots */}
+                  {[game.heroImage, ...(game.screenshots || [])].map((screenshot, index) => (
                     <motion.div
                       key={index}
                       whileHover={{ scale: 1.02, y: -5 }}
